@@ -6,10 +6,11 @@ import reactor.blockhound.BlockHound;
 
 @SpringBootApplication
 public class SpringWebfluxEssentialsApplication {
-//	static {
-//		BlockHound.install();
-//    }
+	static {
+		BlockHound.install();
+    }
 	public static void main(String[] args) {
+		System.out.println("JVM Arguments: " + System.getProperty("sun.java.command"));
 		SpringApplication.run(SpringWebfluxEssentialsApplication.class, args);
 	}
 
